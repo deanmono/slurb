@@ -253,6 +253,9 @@ header {
           #home .promo .promo-graphic p, #home .promo .promo-copy p {
             padding: 0px;
             width: 100%; } }
+    @media screen and (max-width: 400px) {
+      #home .promo .promo-graphic {
+        display: none; } }
     #home .promo .promo-copy {
       text-align: right; }
       @media screen and (max-width: 400px) {

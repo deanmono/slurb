@@ -45,6 +45,12 @@ $light: #f2f3f3;
 
     }
 
+    .promo-graphic {
+      @media screen and (max-width: $break-small) {
+        display: none;
+      }
+    }
+
     .promo-copy {
       text-align: right;
       @media screen and (max-width: $break-small) {
