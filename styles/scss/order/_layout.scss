@@ -1,0 +1,71 @@
+.order-steps {
+  margin: 20px 0;
+
+  div {
+    display: inline-block;
+    width: 280px;
+    text-align: center;
+    font-family: CubanoRegular;
+    letter-spacing: 1.5px;
+    color: $light;
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    }
+
+    .numberCircle {
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      margin-right: 20px;
+      background: transparent;
+      border: 2px solid $light;
+      text-align: center;
+      font-size: 20px;
+      padding: 8px;
+      font-weight: 100;
+    }
+  }
+  div.active {
+    color: $border;
+
+    .numberCircle {
+      border: 2px solid $border;
+      padding: 12px;
+
+    }
+  }
+  div.inactive {
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+  }
+}
+.order-content {
+  .order-forms, .promo-graphic {
+    width: 400px;
+    float: left;
+    padding: 0 13px;
+    @media screen and (max-width: $break-small) {
+      width: 90% !important;
+      padding: 0 5%;
+      float: none;
+    }
+    div {
+      h2 {
+        font-family: CubanoRegular;
+        letter-spacing: 1.5px;
+      }
+    }
+  }
+  .promo-graphic {
+    @media screen and (max-width: $break-small) {
+      display: none;
+    }
+  }
+  .btn-shipping {
+    @media screen and (max-width: $break-small) {
+      width: 100%;
+    }
+  }
+}

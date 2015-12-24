@@ -1,0 +1,15 @@
+header {
+  z-index: 2;
+  position: absolute;
+  background-color: $dark;
+  width: 100%;
+  height: 62px;
+  border-bottom: $border 8px solid;
+  padding: 6px 0;
+}
+.logo {
+  background: url('/slurb/assets/img/logo.png') no-repeat center;
+  width: 250px;
+  height: 42px;
+  margin: 10px auto 0;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="slurbApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="slurbApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="slurbApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="slurbApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Slurb Cola</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/scss/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="section" id="home">
+    <header>
+        <div class="container">
+            <a href="#/home" class="logo"></a>
+        </div>
+    </header>
+
+    <!-- ng-view, where module views are inserted -->
+    <div ng-view class="fade"></div>
+</div>
+
+
+<!-- In production, we would typically lazy load and/or compress and minify these resources together.... -->
+<script src="js/angular/angular.js"></script>
+<script src="js/angular/angular-route.min.js"></script>
+<script src="js/angular/angular-animate.min.js"></script>
+<script src="app.js"></script>
+<script src="app/modules/home/home.js"></script>
+<script src="app/modules/order/order.js"></script>
+<script src="app/common/services/orderTransaction.js"></script>
+<script src="app/common/services/userInfo.js"></script>
+</body>
+</html>

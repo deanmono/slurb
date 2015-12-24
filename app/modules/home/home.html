@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="promo">
+        <div class="promo-copy">
+            <h1>Awesome<br />Electric<br />Flavor</h1>
+            <p>
+                Don’t let energy get you down. Fuel up fast
+                and get <strong>ELECTRIC</strong>. Electric Slurb-Up
+                will get you back to your good ol’ hardcore self in no time!
+            </p>
+            <div class="control">
+                <div>
+                    <h3>Total: {{ total * quantity | currency }}</h3>
+                </div>
+                <button class="btn" ng-click="order.remove()">-</button>
+                <div class="quantity">{{ quantity }}</div>
+                <button class="btn" ng-click="order.add()">+</button>
+            </div>
+
+            <button class="btn btn-promo" ng-click="orderInit()">Order Your Slurb</button>
+        </div>
+        <div class="promo-graphic">
+            <img src="assets/img/slurbpromo.png" />
+        </div>
+    </div>
+</div>

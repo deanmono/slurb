@@ -1,0 +1,338 @@
+html {
+  height: 100%; }
+
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+  margin: 0px;
+  padding: 0px;
+  background: #f1f1f1;
+  height: 100%;
+  background: #321d9b;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #321d9b 0%, #674fe2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #321d9b), color-stop(100%, #674fe2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #321d9b 0%, #674fe2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #321d9b 0%, #674fe2 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #321d9b 0%, #674fe2 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #321d9b 0%, #674fe2 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */ }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+li {
+  display: inline-block; }
+
+a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+.container {
+  width: 856px;
+  margin: 0px auto; }
+  @media screen and (max-width: 400px) {
+    .container {
+      width: 100%; } }
+
+.section {
+  float: left;
+  height: 100%; }
+
+.alert {
+  display: inline-block;
+  letter-spacing: 1.6px;
+  border: 1px #da357d solid;
+  background: transparent;
+  color: #da357d;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  transition: all 0.3s ease 0s;
+  outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+
+.btn {
+  display: inline-block;
+  letter-spacing: 1.6px;
+  border: 1px #f1f1f1 solid;
+  background: transparent;
+  color: #f1f1f1;
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: 200;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px; }
+
+.btn:hover {
+  border-color: #da357d;
+  color: #da357d;
+  -webkit-transition-delay: ease-in 2s;
+  transition-delay: ease-in 2s; }
+
+.btn:disabled {
+  border-color: rgba(241, 241, 241, 0.3);
+  color: rgba(241, 241, 241, 0.3); }
+
+.pull-left {
+  float: left !important; }
+
+.pull-right {
+  float: right !important; }
+
+label {
+  padding: 6px 0 4px;
+  display: block; }
+
+select {
+  height: 32px; }
+
+input[type="number"] {
+  padding: 10px 20px; }
+
+input[type="text"], input[type="email"], input[type="number"], select {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #da357d;
+  padding: 4px 8px;
+  display: block;
+  margin: 0 0 10px;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+  appearance: none;
+  box-shadow: none; }
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="number"]:focus, select {
+  outline: none; }
+
+.fade {
+  position: absolute;
+  padding-top: 82px;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 1; }
+
+.fade.ng-enter,
+.fade.ng-leave {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
+
+.fade.ng-enter {
+  opacity: 0; }
+
+.fade.ng-enter-active {
+  opacity: 1; }
+
+.fade.ng-leave {
+  opacity: 1; }
+
+.fade.ng-leave-active {
+  opacity: 0; }
+
+header {
+  z-index: 2;
+  position: absolute;
+  background-color: #1a1a1a;
+  width: 100%;
+  height: 62px;
+  border-bottom: #da357d 8px solid;
+  padding: 6px 0; }
+
+.logo {
+  background: url("/slurb/assets/img/logo.png") no-repeat center;
+  width: 250px;
+  height: 42px;
+  margin: 10px auto 0; }
+
+@font-face {
+  font-family: 'CubanoRegular';
+  src: url("/slurb/fonts/cubano/cubano-regular-webfont.eot");
+  src: url("/slurb/fonts/cubano/cubano-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/slurb/fonts/cubano/cubano-regular-webfont.woff") format("woff"), url("/slurb/fonts/cubano/cubano-regular-webfont.ttf") format("truetype"), url("/slurb/fonts/cubano/cubano-regular-webfont.svg#CubanoRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+.grid *, .grid *:after, .grid *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.grid {
+  margin: 0; }
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+[class*='col-'] {
+  float: left;
+  padding-right: 20px; }
+  .grid [class*='col-']:last-of-type {
+    padding-right: 0; }
+  @media screen and (max-width: 400px) {
+    [class*='col-'] {
+      width: 100% !important;
+      padding-right: 0; } }
+
+.col-2-3 {
+  width: 66.66%; }
+
+.col-1-3 {
+  width: 33.33%; }
+
+.col-1-2 {
+  width: 50%; }
+
+.col-1-4 {
+  width: 25%; }
+
+.col-1-8 {
+  width: 12.5%; }
+
+.col-1-1 {
+  width: 100%;
+  padding-right: 20px !important; }
+
+#home {
+  color: #f2f3f3;
+  width: 100%; }
+  #home .promo {
+    margin: 0px auto;
+    padding: 40px 0; }
+    #home .promo .promo-graphic, #home .promo .promo-copy {
+      width: 400px;
+      float: left;
+      padding: 0 13px; }
+      @media screen and (max-width: 400px) {
+        #home .promo .promo-graphic, #home .promo .promo-copy {
+          width: 100%;
+          float: none;
+          padding: 0; } }
+      #home .promo .promo-graphic h1, #home .promo .promo-copy h1 {
+        font-size: 3.4em;
+        letter-spacing: 2px;
+        margin: 0;
+        font-family: CubanoRegular;
+        text-shadow: 1px 1px #1a1a1a;
+        color: #f2f3f3; }
+        @media screen and (max-width: 400px) {
+          #home .promo .promo-graphic h1, #home .promo .promo-copy h1 {
+            font-size: 2em; } }
+      #home .promo .promo-graphic p, #home .promo .promo-copy p {
+        letter-spacing: 1.6px;
+        font-weight: 200;
+        font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        line-height: 25px;
+        padding-left: 70px; }
+        @media screen and (max-width: 400px) {
+          #home .promo .promo-graphic p, #home .promo .promo-copy p {
+            padding: 0px;
+            width: 100%; } }
+    #home .promo .promo-copy {
+      text-align: right; }
+      @media screen and (max-width: 400px) {
+        #home .promo .promo-copy {
+          text-align: center; } }
+  #home .control {
+    display: inline-block;
+    float: right; }
+    @media screen and (max-width: 400px) {
+      #home .control {
+        float: none;
+        margin: 0px auto; } }
+  #home .quantity {
+    display: inline-block;
+    letter-spacing: 1.6px;
+    border: 1px #f2f3f3 solid;
+    background: transparent;
+    color: #f2f3f3;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.2em;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px; }
+
+.order-steps {
+  margin: 20px 0; }
+  .order-steps div {
+    display: inline-block;
+    width: 280px;
+    text-align: center;
+    font-family: CubanoRegular;
+    letter-spacing: 1.5px;
+    color: #f2f3f3; }
+    @media screen and (max-width: 400px) {
+      .order-steps div {
+        width: 100%; } }
+    .order-steps div .numberCircle {
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      display: inline-block;
+      margin-right: 20px;
+      background: transparent;
+      border: 2px solid #f2f3f3;
+      text-align: center;
+      font-size: 20px;
+      padding: 8px;
+      font-weight: 100; }
+  .order-steps div.active {
+    color: #da357d; }
+    .order-steps div.active .numberCircle {
+      border: 2px solid #da357d;
+      padding: 12px; }
+  @media screen and (max-width: 400px) {
+    .order-steps div.inactive {
+      display: none; } }
+
+.order-content .order-forms, .order-content .promo-graphic {
+  width: 400px;
+  float: left;
+  padding: 0 13px; }
+  @media screen and (max-width: 400px) {
+    .order-content .order-forms, .order-content .promo-graphic {
+      width: 90% !important;
+      padding: 0 5%;
+      float: none; } }
+  .order-content .order-forms div h2, .order-content .promo-graphic div h2 {
+    font-family: CubanoRegular;
+    letter-spacing: 1.5px; }
+@media screen and (max-width: 400px) {
+  .order-content .promo-graphic {
+    display: none; } }
+@media screen and (max-width: 400px) {
+  .order-content .btn-shipping {
+    width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */
