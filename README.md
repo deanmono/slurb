@@ -13,8 +13,9 @@ This app has implemented the following tools...
 ### System Dependencies
 The first step is to install the application's dependencies.  They are listed below.
 
-1. Git (only if you're cloning from the repo)
-2. Sass (and Ruby)
+1. An http server
+2. Git (only if you're cloning from the repo)
+3. Sass (and Ruby for that matter)
 
 ### Clone the Repo
 This can be done using https or over ssh.  I prefer ssh using `git clone git@github.com:deanmono/slurb.git`
@@ -23,4 +24,6 @@ This can be done using https or over ssh.  I prefer ssh using `git clone git@git
 Move into the projects root directory (`cd slurb`) then install the app dependencies
 
 ## Running Locally
-Go to the root directory path in a modern web browser or open the index.html file from the root directory
+App root will need to be saved to your servers root, then go to the project root directory path in a modern web browser (ie. http://localhost/slurb/)
+
+Viewing the app from file will cause issues in browser due to cross origin security policy. Angular loads views via http.
