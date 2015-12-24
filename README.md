@@ -27,3 +27,5 @@ Move into the projects root directory (`cd slurb`) then install the app dependen
 App root will need to be saved to your servers root, then go to the project root directory path in a modern web browser (ie. http://localhost/slurb/)
 
 Viewing the app from file will cause issues in browser due to cross origin security policy. Angular loads views via http.
+
+Alternatively, you can view the project at [http://deanmono.github.io/slurb/](http://deanmono.github.io/slurb/)
