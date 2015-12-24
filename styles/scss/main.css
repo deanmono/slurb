@@ -24,6 +24,9 @@ body {
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
   /* IE6-9 */ }
+  @media screen and (max-width: 400px) {
+    body {
+      background: #674fe2; } }
 
 ul {
   margin: 0;
